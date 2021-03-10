@@ -22,7 +22,7 @@ The project will be built with the following technologies:
 
 JobXite will have the following features:
 
-- As a user I want to be able to browse through categories of equipment based on type so I can find applicable 
+- As a user I want to be able to browse through categories of equipment based on type, so I can find applicable 
   products for my project.
   - **Tasks**
     - Create site structure and style user interface (HTML/CSS)
@@ -30,7 +30,7 @@ JobXite will have the following features:
     - Create/Source equipment database with the following data:
         - Make/Model
         - Description
-        - Prices per hour/day/week/month
+        - Prices per-hour/day/week/month
         - Images
         - Equipment Type
         - Tags (Keywords)
@@ -88,7 +88,7 @@ JobXite will have the following features:
 
 ---
 
--	As a renter I want to be able to see my upcoming and previous rentals so I can potentially request the same equipment as a previous rent or make modification to my upcoming rents.
+-	As a renter I want to be able to see my upcoming and previous rentals, so I can potentially request the same equipment as a previous rent or make modification to my upcoming rents.
      - **Tasks**
         - Create a CRUD interface for users
         - Store previous transactions associate with the logged-in user
@@ -98,7 +98,7 @@ JobXite will have the following features:
 -	As a renter I want to be able to select an item for delivery or an option to pickup in-store, so I can have the 
      ability to pickup the equipment if I have the capability.
      - **Tasks**
-        - Implement forms for users to setup rentals with an option to pickup or have item delivered.
+        - Implement forms for users to set up rentals with an option to pickup or have item delivered.
         - Use Map API to calculate distance from delivery address to store and charge applicable delivery fee.
 
 
@@ -133,7 +133,7 @@ JobXite will have the following features:
      -  Fine tune UX/UI 
      -  Ensure all basic features work 
      -  Clean-up code
-     -  Deploy app online
+     -  Deploy the app online
      -  Prepare for presentation
 
 -	**Future Iterations:**
@@ -144,6 +144,6 @@ JobXite will have the following features:
      -  Add additional user groups
         - Premium User (Invoiced Bills)
           - User credit card will not be charged on checkout 
-          - Billed invoice will be emailed to customer email 
+          - The billed invoice will be emailed to customer email 
         - Associated Business Accounts
           - Accounts linked to one main account (i.e., Superintendent, Accounting, Foreman, etc.)
