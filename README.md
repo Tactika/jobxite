@@ -147,3 +147,6 @@ JobXite will have the following features:
           - The billed invoice will be emailed to customer email 
         - Associated Business Accounts
           - Accounts linked to one main account (i.e., Superintendent, Accounting, Foreman, etc.)
+
+    
+##

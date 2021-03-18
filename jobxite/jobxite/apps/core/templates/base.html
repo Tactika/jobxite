@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JobXite</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+    </head>
+    <body>
+
+        <nav class="navbar is-dark">
+            <div class="navbar-brand">
+                <a href="{% url 'index' %}" class="navbar-item">JobXite</a>
+                <a role="button" aria-label="menu" aria-expanded="false"
+                   data-target="main-navbar" class="navbar-burger burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="main-navbar" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="{% url 'index' %}" class="navbar-item">Home</a>
+                    <a href="{% url 'rentals' %}" class="navbar-item">Rentals</a>
+                    <a href="{% url 'sales' %}" class="navbar-item">Equipment Sales</a>
+                </div>
+                <div class="navbar-end">
+                    <a href="{% url 'contact' %}" class="navbar-item">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <section class="section">
+            {% block content %}
+
+            {% endblock %}
+        </section>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>
+                        JobXite
+                    </strong>
+                     by
+                    <a href="http://www.richcreek.dev">
+                        Damien Richcreek
+                    </a>
+                    . The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">
+                        MIT
+                    </a>
+                    . The website content is licensed
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        CC BY NC SA 4.0
+                    </a>
+                    .
+                </p>
+            </div>
+        </footer>
+
+    </body>
+</html>
