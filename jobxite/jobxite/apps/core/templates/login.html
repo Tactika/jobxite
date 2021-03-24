@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero is-large has-text-centered">
+    <form method="post">
+        {% csrf_token %}
+        <div class="hero-body">
+            <section>
+                <h1 class="title" style="color: whitesmoke">
+                    Login
+                </h1>
+                <div class="field is-6">
+                    <p class="control has-icons-left has-icons-right">
+                        <input class="input" name="username" placeholder="Username" type="text" maxlength="256"
+                               style="max-width: 400px">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="password" name= "password" placeholder="Password" maxlength="256"
+                        style="max-width:
+                        400px">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control">
+                        <button class="button is-success" type="submit">
+                            Login
+                        </button>
+                    </p>
+                </div>
+                </p>
+            </section>
+        </div>
+    </form>
+</section>
+<style>
+    div.field {
+        max-width: 400px;
+        margin: auto;
+    }
+    p {
+        color: white
+    }
+    ::placeholder {
+        color: black;
+        opacity: 1;
+    }
+    ::-webkit-input-placeholder {
+        color: black;
+    }
+    ::-moz-placeholder {
+        color: black;
+    }
+    :-ms-input-placeholder {
+        color: black;
+    }
+    :-moz-placeholder {
+        color: black;
+    }
+</style>
+{% endblock %}

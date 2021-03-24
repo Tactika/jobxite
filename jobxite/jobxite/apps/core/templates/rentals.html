@@ -27,12 +27,15 @@
                         fringilla egestas.
                     </p>
                 </div>
+                {% if not user.is_authenticated %}
                 <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
+<!--                    <div class="level-left">-->
+
+<!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+<!--                            $350-->
+<!--                        </p>-->
+
+<!--                    </div>-->
                     <div class="level-right">
                         <p class="level-item">
                             <button class="button is-primary ">
@@ -41,13 +44,33 @@
                         </p>
                     </div>
                 </nav>
+                {% endif %}
             </div>
         </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
         <footer class="card-footer">
             <a href="#" class="card-footer-item button is-primary">Daily</a>
             <a href="#" class="card-footer-item button is-primary">Weekly</a>
             <a href="#" class="card-footer-item button is-primary">Monthly</a>
         </footer>
+        {% endif %}
     </div>
     <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
         <article class="media">
@@ -71,776 +94,1323 @@
                         fringilla egestas.
                     </p>
                 </div>
+                {% if not user.is_authenticated %}
                 <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
-    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
-        <article class="media">
-            <div class="media-left">
-                <figure class="image is-96x96">
-                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
-                         alt="Image"/>
-                </figure>
-            </div>
-            <div class="media-content has-text-white">
-                <div class="content">
-                    <p>
-                        <strong class="has-text-white">
-                            Hibiscus Ficus
-                        </strong>
-                        <small>
-                            @NewCollection
-                        </small>
-                        <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
-                        fringilla egestas.
-                    </p>
-                </div>
-                <nav class="level is-mobile">
-                    <div class="level-left">
-                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
-                            $350
-                        </p>
-                    </div>
-                    <div class="level-right">
-                        <p class="level-item">
-                            <button class="button is-primary ">
-                                Rent Me
-                            </button>
-                        </p>
-                    </div>
-                </nav>
-            </div>
-        </article>
-        <footer class="card-footer">
-            <a href="#" class="card-footer-item">Daily</a>
-            <a href="#" class="card-footer-item">Weekly</a>
-            <a href="#" class="card-footer-item">Monthly</a>
-        </footer>
-    </div>
+                    <!--                    <div class="level-left">-->
 
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
+    <div class="box has-background-dark" style="max-width: 400px; display: inline-block">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-96x96">
+                    <img src="https://www.wackerneuson.co.uk/fileadmin/_processed_/f/4/csm_WN_Image_ET145_neueBeklebung_action_02_700x466_9a6aa3d98e.png"
+                         alt="Image"/>
+                </figure>
+            </div>
+            <div class="media-content has-text-white">
+                <div class="content">
+                    <p>
+                        <strong class="has-text-white">
+                            Hibiscus Ficus
+                        </strong>
+                        <small>
+                            @NewCollection
+                        </small>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa
+                        fringilla egestas.
+                    </p>
+                </div>
+                {% if not user.is_authenticated %}
+                <nav class="level is-mobile">
+                    <!--                    <div class="level-left">-->
+
+                    <!--                        <p class="level-item is-size-3 has-text-primary has-text-weight-bold">-->
+                    <!--                            $350-->
+                    <!--                        </p>-->
+
+                    <!--                    </div>-->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <button class="button is-primary ">
+                                Rent Me
+                            </button>
+                        </p>
+                    </div>
+                </nav>
+                {% endif %}
+            </div>
+        </article>
+        {% if user.is_authenticated %}
+        <nav class="level is-mobile">
+            <div class="level-left">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $350
+                </p>
+            </div>
+            <div class="level-center">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $1450
+                </p>
+            </div>
+            <div class="level-right">
+                <p class="level-item is-size-3 has-text-primary has-text-weight-bold">
+                    $4200
+                </p>
+            </div>
+        </nav>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item button is-primary">Daily</a>
+            <a href="#" class="card-footer-item button is-primary">Weekly</a>
+            <a href="#" class="card-footer-item button is-primary">Monthly</a>
+        </footer>
+        {% endif %}
+    </div>
 </div>
 {% endblock %}

@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+
+
+<h2>Register</h2>
+{% block content %}
+
+<section class="hero is-large has-text-centered">
+    <form method="post">
+        {% csrf_token %}
+    <div class="hero-body has-text-centered">
+        <section>
+            <h1 class="title" style="color: whitesmoke">
+                Register
+            </h1>
+            <div class="is-centered">
+                <div class="field is-full">
+                        <p class="control has-icons-left has-icons-right">
+                        <input class="input" type="text" name="username" placeholder="Username" maxlength="256">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                        </span>
+                        </p>
+                </div>
+                <div class="field is-full">
+                    <p class="control has-icons-left">
+                        <input class="input" type="password" name="password1" placeholder="Password" maxlength="256">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field is-full">
+                    <p class="control has-icons-left">
+                        <input class="input" type="password" name="password2" placeholder="Confirm Password" maxlength="256">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control">
+                        <button type="submit" class="button is-success">Register</button>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    </form>
+</section>
+<style>
+    div.field {
+        max-width: 400px;
+        margin: auto;
+    }
+    p {
+        color: white;
+    }
+    li {
+        color: white;
+    }
+    ::placeholder {
+        color: black;
+        opacity: 1;
+    }
+    ::-webkit-input-placeholder {
+        color: black;
+    }
+    ::-moz-placeholder {
+        color: black;
+    }
+    :-ms-input-placeholder {
+        color: black;
+    }
+    :-moz-placeholder {
+        color: black;
+    }
+
+</style>
+
+{% endblock %}
