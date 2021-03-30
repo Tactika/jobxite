@@ -22,6 +22,7 @@ class Product(models.Model):
     weekly_price = models.FloatField()
     monthly_price = models.FloatField()
 
+
     class Meta:
         verbose_name_plural = 'Products'
 

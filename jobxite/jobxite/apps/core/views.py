@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from apps.store.models import Product
+from .models import Item
 
 
 # Create your views here.
@@ -55,3 +56,9 @@ def registerPage(request):
     else:
         form = UserCreationForm()
     return render(request, 'register.html', {'form': form})
+
+def item_list(request):
+    context = {
+        'items': Item.objects.all()
+    }
+    return render(request, 'item_list.html')
