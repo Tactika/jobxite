@@ -1,2 +1,2 @@
-release: python manage.py migrate
+release: python jobxite/manage.py migrate
 web: gunicorn jobxite.wsgi --log-file-
