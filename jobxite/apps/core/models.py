@@ -31,7 +31,6 @@ MAKE_CHOICES = (
     ('TOR', 'Toro'),
     ('WNU', 'Wacker Neuson'),
     ('YNM', 'Yanmar'),
-
     )
 
 class Item(models.Model):
@@ -40,12 +39,14 @@ class Item(models.Model):
     make        =   models.CharField(choices=MAKE_CHOICES, max_length=3)
     model       =   models.CharField(max_length=100)
     category    =   models.CharField(choices=CATEGORY_CHOICES, max_length=3)
-    price       =   models.FloatField()
+    price       =   models.DecimalField(max_digits=100, decimal_places=2)
+    is_for_sale =   models.BooleanField(default=False)
     day_price   =   models.IntegerField(blank=True, null=True)
     week_price  =   models.IntegerField()
     month_price =   models.IntegerField()
     description =   models.TextField(max_length=255)
-    image_main  =   models.ImageField(blank=True, null=True, upload_to='images')
+    long_description = models.TextField(blank=True, null=True)
+    image_main  =   models.ImageField(blank=True, null=True, upload_to='static')
 
     def __str__(self):
         return self.title

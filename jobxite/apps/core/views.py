@@ -1,26 +1,27 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.forms import UserCreationForm
-from apps.store.models import Product
 from .models import Item
 
 
 # Create your views here.
 def index(request):
-    products = Product.objects.all()
 
-    context = {
-        'products': products
-    }
     return render(request, 'index.html')
 
 
-def rentals(request):
-    return render(request, 'rentals.html')
+def rentals(request, *args, **kwargs):
+    context = {
+        'items': Item.objects.all()
+    }
+    return render(request, 'rentals.html', context)
 
 
 def sales(request):
-    return render(request, 'sales.html')
+    context = {
+        'items': Item.objects.filter(is_for_sale=True)
+    }
+    return render(request, 'sales.html', context)
 
 
 def contact(request):

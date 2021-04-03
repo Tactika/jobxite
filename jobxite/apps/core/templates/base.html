@@ -4,10 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>JobXite</title>
+        {% load static %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
         <script src="https://kit.fontawesome.com/22435a4bc2.js" crossorigin="anonymous"></script>
         <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'app.css' %}">
     </head>
     <body style="background-color: #4E4E50; min-height: 100vh">
 
@@ -23,7 +25,6 @@
             </div>
             <div id="main-navbar" class="navbar-menu">
                 <div class="navbar-start">
-<!--                    <a href="{% url 'index' %}" class="navbar-item">Home</a>-->
                     <a href="{% url 'rentals' %}" class="navbar-item">Rentals</a>
                     <a href="{% url 'sales' %}" class="navbar-item">Equipment Sales</a>
                 </div>
@@ -39,11 +40,10 @@
                 </div>
             </div>
         </nav>
-<!--        <section class="section">-->
+
             {% block content %}
 
             {% endblock %}
-<!--        </section>-->
 
         <footer class="hero-foot has-text-centered"
                 style="background-color: #4E4E50">
@@ -68,6 +68,33 @@
                 </p>
             </div>
         </footer>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+        });
+        });
+        }
+
+        });
+        </script>
     </body>
 <style>
     ::placeholder {
@@ -85,6 +112,14 @@
     }
     :-moz-placeholder {
         color: black;
+    }
+    body {
+        font-family: 'Cardo', serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
     }
     footer:last-of-type {
         margin-top: 30px;
